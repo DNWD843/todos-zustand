@@ -4,5 +4,61 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  gap: 30px;
+  padding-left: 25%;
+  padding-right: 25%;
+  box-sizing: border-box;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+}
+
+.input {
+  width: 100%;
+  border: 2px solid rgba(61, 138, 246, 0.6);
+}
+
+.input:focus {
+  box-shadow: 0 0 15px rgb(131, 187, 248);
+}
+
+.card-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
+}
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  border: 2px solid rgba(61, 138, 246, 0.6);
+  background-color: rgb(233, 242, 251);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: rgb(177, 214, 250);
+  transition: all ease-in-out .125s;
+}
+
+.card__checkbox input + span {
+  border: 2px solid rgba(61, 138, 246, 0.6) !important;
+}
+
+.card__toolbar {
+  display: flex;
+}
+
+.card__title {
+  text-align: start;
 }
