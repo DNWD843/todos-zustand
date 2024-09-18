@@ -10,6 +10,9 @@ function App() {
   const [selectedTodoId, setSelectedTodoId] = useState('')
 
   const onAdd = (selectedTodoId: string, title: string) => {
+    if (!title) {
+      return
+    }
     if (selectedTodoId) {
       updateTodo(selectedTodoId, title)
     } else {
